@@ -1,6 +1,8 @@
 
-import PropTypes from 'react'
-function BookingData({ bookingData }) {
+
+import { useSelector } from 'react-redux'
+function BookingData() {
+	const bookingData = useSelector(state=> state)
 	console.log(bookingData)
 	return (
 		<>
@@ -67,9 +69,6 @@ function BookingData({ bookingData }) {
 
 }
 
-BookingData.propTypes = {
-	bookingData: PropTypes.Array
-}
 
 
 export default BookingData
