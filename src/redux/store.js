@@ -1,5 +1,6 @@
 import { createStore } from "redux";
-import bookingReducer from "./bookings/bookingReducer";
+import bookingReducer from "./bookings/reducer";
+
 
  const bookingStore = createStore(bookingReducer)
 
